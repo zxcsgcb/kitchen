@@ -5,6 +5,27 @@ Page({
     pageType: 1,
     // index
     userInfo: {},
+    items: [ 
+      {
+        img: '这里是img',
+        portrait: '这里是头像',
+        name: "思远",
+        good: 5
+      },
+      {
+        img: '这里是img',
+        portrait: '这里是头像',
+        name: "思远",
+        good: 5
+      },
+      {
+        img: '这里是img',
+        portrait: '这里是头像',
+        name: "思远",
+        good: 5
+      }
+    ],
+    viewtype:1,
     open: false,   //是否打开红包
     page: true,   //红包是否显示 
     orderOrBusiness: 'order',
@@ -155,8 +176,9 @@ Page({
   tabChange: function(e) {
     var type = e.currentTarget.dataset.id;
     this.setData({
-      orderOrBusiness: type
+      viewtype: type
     })
+    console.log(type);
   },
   //打开红包
   getPag: function() {

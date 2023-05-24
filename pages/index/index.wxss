@@ -22,6 +22,10 @@ page {
   background: white
 }
 .page1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,18 +34,50 @@ page {
   overflow: hidden;
 }
 .page1 .head {
-  background: #ffe400;
+  background: linear-gradient(#ffe400,white);
   padding: 40rpx 40rpx 20rpx;
-  height: 20%;
+}
+.head .level1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color: white;
+  width: 100%;
+  border-radius: 30rpx; 
+  padding-bottom: 10rpx;
+}
+
+.item1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.level1 image{
+  width: 120rpx;
+  height:120rpx;
+}
+.head .level2{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
+  width: 100%;
+  border-radius: 30rpx; 
+  padding-bottom: 10rpx;
+}
+.level2 image{
+  width: 150rpx;
+  height:150rpx;
 }
 .page1 .one,.two {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-}
-.page1 .saoma {
-  font-size: 36rpx;
-  font-weight: bold;
 }
 .page1 .address {
   font-size: 32rpx;
@@ -52,14 +88,18 @@ page {
 }
 .P_input {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .P_input input {
   background: white;
   border-radius: 40rpx;  
-  width: 90%;
+  width: 85%;
   padding: 10rpx 0;
   padding-left: 40rpx;
-  margin: 40rpx 0 5% 20rpx;
+  margin: 20rpx 0 5% 0rpx;
 }
 .P_input image {
   position: absolute;
@@ -67,34 +107,93 @@ page {
   width: 36rpx;
   height: 36rpx;
   padding: 6rpx 20rpx;
-  right: 20rpx;
-  top: 12rpx;
+  right: 70rpx;
+  top: 35rpx;
 }
+.page1 .saoma {
+  background-color: #ffe400;
+  font-size: 36rpx;
+  font-weight: bold;
+  width: 5%;
+  margin: 20rpx 0 5% 0rpx;
+}
+
+
+.bonus{
+  width: 160rpx;
+  background-color: white;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  height: 100rpx;
+  text-align: center;
+  border-radius: 5rpx;
+  box-shadow: 0 0 6rpx 5rpx rgba(0, 0, 0, 30%);
+}
+
+.column {
+  
+  width: 100%;
+}
+.scroll-inner {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height:150rpx;
+  display: flex;
+  white-space: nowrap; 
+  width: 100%;
+}
+.zhanshi {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+
+.xiang {
+  width: 45%;
+  height: 1000rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+}
+
+.acImg {
+  min-width: 100%;
+  max-height: 500rpx;
+  background-color: thistle;
+}
+
+.acBottom {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .swiper-item,.swiperList,swiper  {
   height: 60rpx;
 }
 .icon-news {
   color: #ff5400;
 }
-.P_title {
-  display: flex; 
-  padding: 0 10%;
-  height: 8%;
-  justify-content: space-between;
-  background: white;
-  font-size: 36rpx;
-}
-.P_order,.P_business {
-  width: 30%;
-  padding: 30rpx;  
-  text-align: center;
-}
+
+
 .orderPage-sideBar {
   width: 170rpx;
   overflow: hidden;
   font-size: 32rpx;
 }
-.P_order_P {
+.P_order {
   margin-top: 4rpx;
 }
 .orderPage-sideBar,orderPage-sideBar2 {  
