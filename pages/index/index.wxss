@@ -687,3 +687,11 @@ page {
 .page4 .phoneColor {
   color: rgb(40,136,252);
 }
+.level1 text{
+  font-family: 楷体;
+  font-size: 90%;
+}
+.level2 text{
+  font-family: 仿宋;
+  font-size: 110%;
+}

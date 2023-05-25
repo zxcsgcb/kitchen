@@ -37,56 +37,56 @@
     <view class="level1">
       <view class="item1">
         <image src="../../img/1.png"></image>
-        <text>家庭</text>
+        <text>家庭宴请</text>
       </view>
       <view class="item1">
         <image src="../../img/1.png"></image>
-        <text>家庭</text>
+        <text>私人订制</text>
       </view>
       <view class="item1">
         <image src="../../img/1.png"></image>
-        <text>家庭</text>
+        <text>食材上门</text>
       </view>
       <view class="item1">
         <image src="../../img/1.png"></image>
-        <text>家庭</text>
+        <text>包月服务</text>
       </view><view class="item1">
         <image src="../../img/1.png"></image>
-        <text>家庭</text>
+        <text>周中特惠</text>
       </view>
     </view>
     <view class="level2">
       <view class="item1">
         <image src="../../img/1.png"></image>
-        <text>家庭</text>
+        <text>中餐宴请</text>
       </view>
       <view class="item1">
         <image src="../../img/1.png"></image>
-        <text>家庭</text>
+        <text>地方菜系</text>
       </view>
       <view class="item1">
         <image src="../../img/1.png"></image>
-        <text>家庭</text>
+        <text>火锅围炉</text>
       </view>
       <view class="item1">
         <image src="../../img/1.png"></image>
-        <text>家庭</text>
+        <text>日料刺身</text>
       </view>
       <view class="item1">
         <image src="../../img/1.png"></image>
-        <text>家庭</text>
+        <text>本帮菜</text>
       </view>
       <view class="item1">
         <image src="../../img/1.png"></image>
-        <text>家庭</text>
+        <text>西餐</text>
       </view>
       <view class="item1">
         <image src="../../img/1.png"></image>
-        <text>家庭</text>
+        <text>中式面点</text>
       </view>
       <view class="item1">
         <image src="../../img/1.png"></image>
-        <text>家庭</text>
+        <text>甜点茶会</text>
       </view>
     </view>
   </view>
@@ -94,8 +94,8 @@
     <view class="bonus" style="display: inline-block;">
       限时秒杀
     </view>
-    <view class="bonus" style="display: inline-block;">
-      限时秒杀
+    <view class="bonus" style="display: inline-block;" bindtap="list">
+      点评榜单
     </view>
     <view class="bonus" style="display: inline-block;">
       限时秒杀

@@ -93,6 +93,15 @@ Page({
     // me
     img: ''
   },
+  list:function(){
+    wx.navigateTo({
+      url: '../list/list',
+      success:function(){
+        console.log("flahlfahslabfa")
+      }
+    })
+  },
+
   onLoad: function () {    
     var that = this
     wx.getLocation({
