@@ -106,3 +106,7 @@ page {
 .price {
   color: #ed2323 !important;
 } 
+
+.whiteBG {
+  background-color: white;
+}

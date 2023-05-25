@@ -1,5 +1,24 @@
 <!--index.wxml-->
-
+<view class="container page0" wx:if="{{pageType==0}}">
+  <view class="mePic">
+    <image src="{{img}}"></image>
+  </view>
+  <view class="mePag" bindtap="toMyPackage">
+    <view>
+      <text class="iconfont icon-pag2">  我的红包</text>
+      <text class="iconfont icon-more"></text>
+    </view>
+  </view>
+  <view class="mePag" bindtap="toMyAddress">
+    <view class="meMap">
+      <text class="iconfont icon-map">  我的地址</text>
+      <text class="iconfont icon-more"></text>
+    </view>
+  </view>
+  <view class="calling" bindtap="calling">
+    订餐电话：<text class="phoneColor">1234567</text>
+  </view>
+</view>
 
 <view class="container page1" wx:if="{{pageType==1}}">
   <view class="head">
@@ -105,19 +124,19 @@
       日推新菜
     </view>
   </view>
-  <scroll-view class="zhanshi" enable-flex="true">
-    <block wx:for="{{items}}"wx:key="id" >
+  <view style="display: flex;justify-content: center;align-items: center;">
+    <view class="zhanshi">
+    <block wx:for="{{items}}" wx:key="" >
     <view class="xiang">
-      <view class='acImg'>{{items.image}}</view>
+      <view class='acImg'>{{item.image}}</view>
       <view class='acBottom'>
-        <view>{{items.protrait}}</view>
-        <view>{{items.name}}</view>
-        <view class='icon-money'></view>
-        <view>{{items.good}}</view>
+        <view class='iconfont icon-money'>{{item.name}}</view>
+        <view class='iconfont icon-money'>{{item.good}}</view>
       </view>
     </view>
     </block>
-  </scroll-view>
+  </view>
+  </view>
   
  </view>
 
@@ -293,6 +312,12 @@
     <image src="../../img/icon2-active.png" wx:if="{{pageType==2}}"></image>
     <view class="{{pageType==2?'fixedtext activecolor':'fixedtext'}}">购物车</view>
   </view>
+
+  <view bindtap="chooseType" data-id="0">
+    <image src="../../img/icon0.png" class="addIcon" wx:if="{{pageType!=0}}"></image>
+    <image src="../../img/icon0-active.png" class="addIcon" wx:if="{{pageType==0}}"></image>
+  </view>
+
   <view bindtap="chooseType" data-id="3">
     <image src="../../img/icon3.png" wx:if="{{pageType!=3}}"></image>
     <image src="../../img/icon3-active.png" wx:if="{{pageType==3}}"></image>

@@ -21,18 +21,7 @@ page {
 .bottomfixed {
   background: white
 }
-.page1 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
+
 .page1 .head {
   background: linear-gradient(#ffe400,white);
   padding: 40rpx 40rpx 20rpx;
@@ -118,7 +107,6 @@ page {
   margin: 20rpx 0 5% 0rpx;
 }
 
-
 .bonus{
   width: 160rpx;
   background-color: white;
@@ -131,7 +119,6 @@ page {
 }
 
 .column {
-  
   width: 100%;
 }
 .scroll-inner {
@@ -140,34 +127,36 @@ page {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  height:150rpx;
   display: flex;
   white-space: nowrap; 
   width: 100%;
 }
 .zhanshi {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  background-color: #fff;
+  padding-bottom: 130rpx;
 }
 
 .xiang {
   width: 45%;
-  height: 1000rpx;
+  height: 400rpx;
   display: flex;
+  margin-left: 27rpx;
+  margin-top: 20rpx;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: teal;
 }
 
 .acImg {
   min-width: 100%;
-  max-height: 500rpx;
+  /* max-height: 300rpx; */
+  height: 300rpx;
   background-color: thistle;
 }
 
@@ -681,6 +670,13 @@ page {
 .bottomfixed image {
   width: 40rpx;
   height: 40rpx;
+}
+
+.bottomfixed .addIcon {
+  width: 160rpx;
+  height: 160rpx;
+  position: relative;
+  bottom: 80rpx;
 }
 .page4 .calling {
   margin-top: 60rpx;
